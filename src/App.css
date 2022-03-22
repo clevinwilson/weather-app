@@ -32,10 +32,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.app{
+
+.app {
   padding: 15px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 21px;
 }
