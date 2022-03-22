@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './WeatherCard.css'
-
+import {useNavigate} from 'react-router-dom'
 
 function Card() {
-    const [weather, setWeather]=useState(true)
+    const [weather, setWeather]=useState(true);
+    const navigate=useNavigate();
     return (
         <div>
+            <h2 className='section-title'>Weather</h2>
             <div className=" mb-4 card col-md-3" >
                 <div className="card-body ">
                     {weather ? <div className='row'>
@@ -23,7 +25,7 @@ function Card() {
                     </div>
                         :
 
-                        <div onClick={() => { setWeather(!weather) }}  className='row'>
+                        <div onClick={() => { navigate('/addplace') }}  className='row'>
                             <div className='add-place'>
                                 <h2 className='add-place-icon'>+</h2>
                             </div>
