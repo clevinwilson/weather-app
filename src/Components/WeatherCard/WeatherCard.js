@@ -6,12 +6,12 @@ function Card() {
     const [weather, setWeather]=useState(true);
     const navigate=useNavigate();
     return (
-        <div>
+        <div className='box-padding'>
             <h2 className='section-title'>Weather</h2>
-            <div className=" mb-4 card col-md-3" >
-                <div className="card-body ">
+            <div onClick={() => { setWeather(!weather) }} className=" mb-4 card col-md-3" >
+                <div  className="card-body ">
                     {weather ? <div className='row'>
-                        <div onClick={() => { setWeather(!weather)}} className='col-6'>
+                        <div  className='col-6'>
                             <h5 className=" card-title">Card title</h5>
                             <h6 className="card-subtitle mb-2 sub-title">Card subtitle</h6>
                             <p className="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

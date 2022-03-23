@@ -1,10 +1,10 @@
 
 import './App.css';
-import AddPlace from './Components/AddPlace/AddPlace';
 import Card from './Components/WeatherCard/WeatherCard';
 import { withStyles } from "@material-ui/core/styles";
 import { Routes, Route, Router, BrowserRouter } from 'react-router-dom';
-
+import AddPlace from "./Pages/AddPlace";
+import WeatherCard from './Pages/WeatherCard';
 function App() {
   return (
     <div className='app'  >
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           
-          <Route path='/'  element={<Card></Card>} />
+          <Route path='/'  element={<WeatherCard/>} />
 
           <Route path='/addplace' element={<AddPlace></AddPlace>} />
         </Routes>
