@@ -1,0 +1,30 @@
+.title-message {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.title-subtext {
+    font-size: 42px;
+    font-weight: 200;
+}
+
+.welcome-box {
+    line-height: 32px;
+}
+
+.location {
+    background-color: #e2e9fd !important;
+}
+
+.location-card {
+    height: 68px;
+    background-color: #ebebeb;
+    border-radius: 11px;
+    color: #797979;
+
+}
+
+.location-card-title {
+    margin-top: 8px;
+    font-size: 25px !important;
+}

@@ -7,8 +7,8 @@ function Card() {
     const navigate=useNavigate();
     return (
         <div className='box-padding'>
-            <h2 className='section-title'>Weather</h2>
-            <div onClick={() => { setWeather(!weather) }} className=" mb-4 card col-md-3" >
+            {/* <h2 className='section-title'>Weather</h2> */}
+            <div onClick={() => { setWeather(!weather) }} className=" mb-4 card col-md-12" >
                 <div  className="card-body ">
                     {weather ? <div className='row'>
                         <div  className='col-6'>
