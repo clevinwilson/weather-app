@@ -4,15 +4,16 @@ import './Navbar.css';
 import {useNavigate} from 'react-router-dom'
 function Navbar() {
     const [hamburger,setHamburger]=useState(false);
+    const navigate=useNavigate();
     return (
         <div>
             
           
             <nav style={{ backgroundColor: "#f7f7f7"}} className="p-3 navbar">
-                <a className="nav-logo">CoWin</a>
+                <a onClick={()=>{navigate('/')}} className="nav-logo">CoWin</a>
                 <ul className={hamburger ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <a  className="nav-link">Dashboard</a>
+                        <a onClick={() => { navigate('/') }} className="nav-link">Dashboard</a>
                     </li>
                     <li className="nav-item">
                         <a  className="nav-link">Profile</a>
@@ -37,7 +38,7 @@ function Navbar() {
             {/* <!-- top var for sm device --> */}
 
             <div className=" p-2 topnav">
-                <a className="active" >CoWin</a>
+                <a onClick={() => { navigate('/') }} className="active" >CoWin</a>
                 {/* <!-- <a href="#news">News</a>
                   <a href="#contact">Contact</a>
                   <a href="#about">About</a> --> */}
@@ -46,7 +47,7 @@ function Navbar() {
 
 
             <nav className="nav">
-                <a  className="nav__link">
+                <a onClick={() => { navigate('/') }} className="nav__link">
                     <i className="material-icons nav__icon">dashboard</i>
                     <span className="nav__text">Dashboard</span>
                 </a>
