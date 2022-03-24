@@ -15,7 +15,7 @@
 }
 
 .sub-title {
-    color: #bcbcbc !important;
+    color: white !important;
     font-size: 17px;
     margin-top: 9px !important;
     margin-left: 2px;
@@ -55,4 +55,8 @@
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+.card-text {
+    font-size: 17px;
 }

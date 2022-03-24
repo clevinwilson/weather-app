@@ -1,26 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './WeatherCard.css'
-import {useNavigate} from 'react-router-dom'
+import axios  from 'axios';
+import {useNavigate} from 'react-router-dom';
+import {WEATHER_API_KEY} from '../constants/constants'
 
 function Card() {
-    const [weather, setWeather]=useState(true);
+    
+    const [weather, setWeather]=useState({});
     const navigate=useNavigate();
+    useEffect(()=>{
+        axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=Kannur`).then((response)=>{
+            setWeather(response.data)
+        })
+    },[])
     return (
         <div className='box-padding'>
             {/* <h2 className='section-title'>Weather</h2> */}
-            <div onClick={() => { setWeather(!weather) }} className=" mb-4 card col-md-12" >
+            <div onClick={() => {  }} className=" mb-4 card col-md-12" >
                 <div  className="card-body ">
                     {weather ? <div className='row'>
-                        <div  className='col-6'>
-                            <h5 className=" card-title">Card title</h5>
-                            <h6 className="card-subtitle mb-2 sub-title">Card subtitle</h6>
-                            <p className="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div  className='col-6 mt-3'>
+                            <h5 className=" card-title">{weather.location ? weather.location.name : null}</h5>
+                            {/* <h6 className="card-subtitle mb-2 sub-title">{weather.location ? weather.location.region + " ," + weather.location.country : null}</h6> */}
+                            <p className="card-text mt-3">{weather.location ? weather.current.weather_descriptions[0] : null}</p>
                             {/* <a className="card-link">Card link</a>
                             <a className="card-link">Another link</a> */}
                         </div>
                         <div style={{ textAlign: "center" }} className='col-6'>
                             {/* <img src='https://raw.githubusercontent.com/goyal-aman/Images/master/weatber.jpg'></img> */}
-                            <h1 className="temperature-box" ><span className='temperature' >23</span><sup className='celsius-icon'>°</sup><span className='celsius' >C</span></h1>
+                            <h1 className="temperature-box" ><span className='temperature' >{weather.current ? weather.current.temperature : null}</span><sup className='celsius-icon'>°</sup><span className='celsius' >C</span></h1>
                         </div>
                     </div>
                         :
