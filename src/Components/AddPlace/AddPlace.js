@@ -9,6 +9,9 @@ function AddPlace() {
                 <input type="email" className="form-control "  placeholder="🔍 Search"/>
                   
             </div>
+            <div className='add-place-button-box'>
+                <button type="button" className="btn btn-primary add-place-button">Submit</button>
+            </div>
         </div>
     )
 }

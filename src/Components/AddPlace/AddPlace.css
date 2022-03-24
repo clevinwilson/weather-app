@@ -3,3 +3,23 @@
     padding: 16px !important;
     border-radius: 20px !important;
 }
+
+.add-place-button-box {
+    margin-top: 387px;
+    text-align: center;
+}
+
+.add-place-button {
+    font-size: 18px !important;
+    padding: 12px !important;
+    font-weight: 600 !important;
+    border-radius: 9px !important;
+    width: 146px !important;
+    background-color: rgb(144 202 249) !important;
+    color: rgb(37 52 64) !important;
+    border-color: rgb(144 202 249) !important;
+}
+
+.add-place-button:hover {
+    background-color: rgb(66 165 245) !important;
+}

@@ -9,16 +9,16 @@ function Card() {
     const [weather, setWeather]=useState({});
     const navigate=useNavigate();
     useEffect(()=>{
-        axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=Kannur`).then((response)=>{
-            setWeather(response.data)
-        })
+        // axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=Kannur`).then((response)=>{
+        //     setWeather(response.data)
+        // })
     },[])
     return (
         <div className='box-padding'>
             {/* <h2 className='section-title'>Weather</h2> */}
-            <div onClick={() => {  }} className=" mb-4 card col-md-12" >
+            <div onClick={() => { navigate('/addplace') }} className=" mb-4 card col-md-12" >
                 <div  className="card-body ">
-                    {weather ? <div className='row'>
+                    {weather.location ? <div className='row'>
                         <div  className='col-6 mt-3'>
                             <h5 className=" card-title">{weather.location ? weather.location.name : null}</h5>
                             {/* <h6 className="card-subtitle mb-2 sub-title">{weather.location ? weather.location.region + " ," + weather.location.country : null}</h6> */}
