@@ -1,11 +1,24 @@
 import React, { useState } from 'react'
 import TextField from "@material-ui/core/TextField";
-import './AddPlace.css'
+import './AddPlace.css';
+import {FirebaseContext} from '../../store/Context'
+import { useContext } from 'react';
+import {useNavigate} from 'react-router-dom';
+
 function AddPlace() {
     const[place,setPlace]=useState('');
+    const {firebase} = useContext(FirebaseContext);
+    const navigate=useNavigate();
+    const date=new Date();
     const handleSubmit=()=>{
-        alert(place)
+        firebase.firestore().collection('location').add({
+            city:place,
+            time:date.toString()
+        }).then(()=>{
+            navigate('/')
+        })
     }
+
     return (
         <div className='box-padding'>
             <div className="form-group">
@@ -16,9 +29,7 @@ function AddPlace() {
                   
             </div>
             <div className='add-place-button-box'>
-                <button onClick={()=>{
-                    handleSubmit()
-                }} type="button" className="btn btn-primary add-place-button">Add</button>
+                <button onClick={handleSubmit} type="button" className="btn btn-primary add-place-button">Add</button>
             </div>
         </div>
     )
