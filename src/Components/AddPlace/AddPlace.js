@@ -11,7 +11,7 @@ function AddPlace() {
     const navigate=useNavigate();
     const date=new Date();
     const handleSubmit=()=>{
-        firebase.firestore().collection('location').add({
+        firebase.firestore().collection('location').doc("gGn2cWHPrqcZOpYRp5X3").update({
             city:place,
             time:date.toString()
         }).then(()=>{
