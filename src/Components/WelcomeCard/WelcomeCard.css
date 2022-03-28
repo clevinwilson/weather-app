@@ -1,11 +1,13 @@
 .title-message {
-    font-size: 43px;
+    font-size: 40px;
     font-weight: 700;
+    color: white;
 }
 
 .title-subtext {
     font-size: 22px;
     font-weight: 200;
+    color: white;
 }
 
 .welcome-box {
@@ -28,4 +30,8 @@
 .location-card-title {
     margin-top: 8px;
     font-size: 22px !important;
+}
+
+.welcome-container {
+    margin-top: 63px;
 }

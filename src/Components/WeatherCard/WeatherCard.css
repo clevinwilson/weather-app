@@ -61,3 +61,9 @@
 .card-text {
     font-size: 17px;
 }
+
+.weatherbox-container {
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

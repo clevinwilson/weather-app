@@ -30,7 +30,7 @@ function Card() {
       
     }, [])
     return (
-        <div className='box-padding'>
+        <div className='box-padding weatherbox-container'>
             {/* <h2 className='section-title'>Weather</h2> */}
             <div onClick={() => { navigate('/addplace') }} className=" mb-4 card col-md-12" >
                 <div className="card-body ">

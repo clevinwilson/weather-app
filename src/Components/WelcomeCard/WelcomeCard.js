@@ -20,18 +20,20 @@ function WelcomeCard() {
     })
   },[])
   return (
-    <div className='box-padding'>
-      <div className='welcome-box mt-4'>
+    <div className='box-padding welcome-container'>
+      <div className='welcome-box mt-5'>
        
-        <p className='title-message'>Hi Clevin</p>
-        <p className=' title-subtext'>Good morning</p>
+        <div className='ml-3' >
+          <p className='title-message'>Hi, Clevin</p>
+          <p className=' title-subtext'>Good morning</p>
+        </div>
         <div onClick={() => { }} className=" location-card  mt-5  col-12" >
           <div className="card-body ">
             <div className='row'>
               <div  className='col-3 text-center mt-2'>
                 <LocationOnIcon fontSize="large"/>
               </div>
-              <div className='col-9'>
+              <div style={{position:'inherit'}} className='col-9'>
                 <h5  style={{position:"inherit"}} className=" location-card-title card-title">{location ? location.city:null}</h5>
                 
               </div>

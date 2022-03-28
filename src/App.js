@@ -10,7 +10,7 @@ import { useContext } from 'react';
 function App() {
   const { firebase } = useContext(FirebaseContext)
   return (
-    <div className='app p-2'  >
+    <div className='app'  >
       
       <BrowserRouter>
         <Routes>
