@@ -4,10 +4,36 @@ import './Navbar.css';
 import {useNavigate} from 'react-router-dom'
 function Navbar() {
     const [hamburger,setHamburger]=useState(false);
+    const [navbar,setNavbar]=useState(false);
     const navigate=useNavigate();
+  
+
     return (
         <div>
-            
+            <div style={{ position: "fixed" }}>
+                <div className="wrapper-2" style={{ margin: " -15px" }}>
+                    <div className="header">
+                        {/* <!-- overlay-menuv-menu --> */}
+                        <div id="mySidenav" className={navbar ? "sidenav sidenav-open" : "sidenav sidenav-close"}>
+                            <a onClick={() => { setNavbar(!navbar) }} className="closebtn" >&times;</a>
+                            <img src="" height="95" width="150" className="img-responsive banner-menu"
+                                alt="logo" />
+                            <a >Home</a>
+                            <hr className='nav-bar-items' />
+                            <a >Our Projects</a>
+                            <hr className='nav-bar-items' />
+                            <a >About</a>
+                            <hr className='nav-bar-items' />
+                            <a>Contact</a>
+                            <hr className='nav-bar-items' />
+                            <a >Services</a>
+                            <hr className='nav-bar-items' />
+                            <a >Our Plans</a>
+                        </div>
+                        {/* <!-- //overlay-menuv-menu --> */}
+                    </div>
+                </div>
+            </div>
           
             <nav style={{ backgroundColor: "#f7f7f7"}} className="p-3 navbar">
                 <a onClick={()=>{navigate('/')}} className="nav-logo">CoWin</a>
@@ -25,7 +51,7 @@ function Navbar() {
                         <a className="nav-link">Settings</a>
                     </li>
                     <li style={{ marginLeft:"20px"}}>
-                        <img className="avatar-image" src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa743gMgAQiEJZsTrjoLGS0Qgghopq7B2I6FYpewgRYhNzzAEiRVolY2GXZfB0ZvKUN-s&usqp=CAU'}  alt=""></img>
+                        <img onClick={() => {setNavbar(!navbar) }}  className="avatar-image" src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa743gMgAQiEJZsTrjoLGS0Qgghopq7B2I6FYpewgRYhNzzAEiRVolY2GXZfB0ZvKUN-s&usqp=CAU'}  alt=""></img>
                           
                       </li>
                 </ul>
@@ -42,7 +68,7 @@ function Navbar() {
                 {/* <!-- <a href="#news">News</a>
                   <a href="#contact">Contact</a>
                   <a href="#about">About</a> --> */}
-                <img className="avatar-image" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa743gMgAQiEJZsTrjoLGS0Qgghopq7B2I6FYpewgRYhNzzAEiRVolY2GXZfB0ZvKUN-s&usqp=CAU"} alt="" />
+                <img onClick={()=>{setNavbar(!navbar)}}  className="avatar-image" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa743gMgAQiEJZsTrjoLGS0Qgghopq7B2I6FYpewgRYhNzzAEiRVolY2GXZfB0ZvKUN-s&usqp=CAU"} alt="" />
             </div>
 
 

@@ -5,6 +5,7 @@
     border-radius: 16px !important;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://cdn.pixabay.com/photo/2020/02/23/08/57/view-4872677_960_720.jpg);
     background-size: cover;
+    position: inherit !important;
 }
 
 

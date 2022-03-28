@@ -32,7 +32,7 @@ function WelcomeCard() {
                 <LocationOnIcon fontSize="large"/>
               </div>
               <div className='col-9'>
-                <h5 className=" location-card-title card-title">{location ? location.city:null}</h5>
+                <h5  style={{position:"inherit"}} className=" location-card-title card-title">{location ? location.city:null}</h5>
                 
               </div>
               
