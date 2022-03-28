@@ -32,7 +32,7 @@ function Card() {
     return (
         <div className='box-padding weatherbox-container'>
             {/* <h2 className='section-title'>Weather</h2> */}
-            <div onClick={() => { navigate('/addplace') }} className=" mb-4 card col-md-12" >
+            <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-12" >
                 <div className="card-body ">
                     {weather.location ? <div className='row'>
                         <div className='col-6 mt-3'>
@@ -49,7 +49,7 @@ function Card() {
                     </div>
                         :
 
-                        <div onClick={() => { navigate('/addplace') }} className='row'>
+                        <div onClick={() => { navigate('/weatherdetails') }} className='row'>
                             <div className='add-place'>
                                 <h2 className='add-place-icon'>+</h2>
                             </div>
