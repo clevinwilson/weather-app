@@ -21,9 +21,10 @@ function WelcomeCard() {
   },[])
   return (
     <div className='box-padding'>
-      <div className='welcome-box'>
-        <p className='title-message'>Good morning,</p>
-        <p className='title-subtext'>Clevin</p>
+      <div className='welcome-box mt-4'>
+       
+        <p className='title-message'>Hi Clevin</p>
+        <p className=' title-subtext'>Good morning</p>
         <div onClick={() => { }} className=" location-card  mt-5  col-12" >
           <div className="card-body ">
             <div className='row'>
