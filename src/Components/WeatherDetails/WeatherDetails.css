@@ -1,5 +1,18 @@
 .weather-details-container {
     background-image: url(/public/images/we.jpg);
-    background-size: 100% 100%;
     height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-box {
+    text-align: center;
+}
+
+.weatherpage-icon {
+    font-size: 26px !important;
+}
+
+.weatherdetails-header {
+    font-size: 18px;
 }
