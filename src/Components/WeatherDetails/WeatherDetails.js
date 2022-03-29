@@ -10,7 +10,7 @@ function WeatherDetails() {
       <div className='container weather-details-container text-white header-box'>
 
         <div className='row'>
-          <div className='mt-5 col-3 '>
+          <div className='mt-4 col-3 '>
             <i className="material-icons nav__icon weatherpage-icon">edit</i>
           </div>
           <div className='mt-4 col-6 weatherdetails-header'>
