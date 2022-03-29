@@ -16,3 +16,28 @@
 .weatherdetails-header {
     font-size: 18px;
 }
+
+.weather-text {
+
+    font-size: 138px;
+    font-weight: 400;
+    font-family: monospace;
+
+}
+
+.weather-container {
+    margin-top: 82px !important;
+}
+
+.weather-format {
+    top: -60px !important;
+    font-size: 35px !important;
+    margin-right: -25px;
+}
+
+.weather-description {
+
+    font-size: 25px;
+    font-family: inherit;
+
+}
