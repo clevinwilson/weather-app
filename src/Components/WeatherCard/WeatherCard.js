@@ -26,9 +26,6 @@ function Card() {
             // })
         })
     }, [])
-    useEffect(() => {
-      
-    }, [])
     return (
         <div className='box-padding weatherbox-container'>
             {/* <h2 className='section-title'>Weather</h2> */}
