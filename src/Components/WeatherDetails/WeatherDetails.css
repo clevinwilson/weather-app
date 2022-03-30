@@ -1,6 +1,5 @@
 .weather-details-container {
     background-image: url(/public/images/we.jpg);
-    height: 1000px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -85,5 +84,5 @@
 }
 
 .left-margin-subtext{
-    margin-left: 50px;
+    margin-left: 35px;
 }

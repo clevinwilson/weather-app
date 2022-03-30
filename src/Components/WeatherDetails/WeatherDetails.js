@@ -2,9 +2,9 @@ import React from 'react'
 import './WeatherDetails.css';
 import EditIcon from '@mui/icons-material/Edit';
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
-
+import {useNavigate} from 'react-router-dom'
 function WeatherDetails() {
-
+  const navigate=useNavigate();
   return (
     <div >
       <div className='container weather-details-container text-white header-box'>
@@ -60,27 +60,38 @@ function WeatherDetails() {
           </div>
         </section>
 
-        <section>
-          <div className='row mt-4 p-3'>
-            <div className=' weather-card-box'>
-              <h1 className='weather-forecast'>Forecast</h1>
+        <section >
+          <div className='row mb-5  mt-4 p-3'>
+            <div className='mb-5 weather-card-box'>
+              <h1 className='weather-forecast'>More Forecast</h1>
               <div className='row forecast-description mt-5'>
                 <div className='forecat-card col-12 p-3'>
                   <div className=''>
                     
-                    <div className='ml-5 weather-forecast-description-box '>
-                     <div >
-                        <span className=' forecast-text weather-speed'>Humidity: 68° </span>
-                        <span  className='left-margin-subtext forecast-text weather-speed'>Ecloudcover:18 </span>
+                    <div className='row m-1 weather-forecast-description-box '>
+                     
+                      <div className='col-6'>
+                        <p className=' forecast-text weather-speed'>Humidity: 68% </p>
+                        <p className=' forecast-text weather-speed'>Visibility: 68</p>
+                        <p className=' forecast-text weather-speed'>UV index: 11 </p>
+                      </div>
+                      <div className='col-6'>
+                        <p className=' forecast-text weather-speed'>Cloud cover: 18 </p>
+                        <p className=' forecast-text weather-speed'>Pressure: 1010</p>
+                        <p className=' forecast-text weather-speed'>Feelslike: 18 </p>
+                      </div>
+                     {/* <div >
+                        <span className=' forecast-text weather-speed'>Humidity: 68% </span>
+                        <span  className='left-margin-subtext forecast-text weather-speed'>Cloud cover:18 </span>
                      </div>
                       <div >
-                        <span className=' forecast-text weather-speed'>Cloudcover: 68° </span>
-                        <span className='ml-5 forecast-text weather-speed'>Feelslike:18 </span>
+                        <span className=' forecast-text weather-speed'>Visibility: 68</span>
+                        <span style={{ marginLeft:'48px'}} className=' forecast-text weather-speed'>Pressure: 1010mbar </span>
                       </div>
                       <div >
-                        <span className=' forecast-text weather-speed'>Uv_index: 68° </span>
-                        <span className='left-margin-subtext forecast-text weather-speed'>Visibility:18 </span>
-                      </div>
+                        <span className=' forecast-text weather-speed'>UV index: 11 </span>
+                        <span className='left-margin-subtext forecast-text weather-speed'>Feelslike: 18 </span>
+                      </div> */}
                       
                     </div>
                   </div>
