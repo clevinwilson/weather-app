@@ -31,6 +31,34 @@ function WeatherDetails() {
         <div className='row'>
           <p className='weather-description'>Cloudy</p>
         </div>
+        <div className='row'>
+          <p className='weather-time mt-3'>2022-03-30 08:41</p>
+        </div>
+
+        <section>
+          <div className='row mt-4 p-3'>
+            <div className='mt-5 weather-card-box'>
+              <h1 className='weather-forecast'>Forecast</h1>
+              <div className='row forecast-description mt-5'>
+                <div className='col-4'>
+                  <img style={{borderRadius:'11px'}} className="mt-4" src='https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png'></img>
+                </div>
+                <div className='forecat-card col-8 p-3'>
+                  <div className=''>
+                    <div>
+                      <i className="material-icons material-icons-cloud  nav__icon">filter_drama</i>
+                    </div>
+                    <div className='weather-forecast-description-box mt-4'>
+                      <i className="ml-5 material-icons material-icons-arrow  nav__icon">east</i><span className='weather-speed'>6 km/h</span>
+                      <span className='ml-5 material-icons-arrow weather-speed'>68° </span>
+                      <span className='ml-5 material-icons-arrow weather-speed'>ENE </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 

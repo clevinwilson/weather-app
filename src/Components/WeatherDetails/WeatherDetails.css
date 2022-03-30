@@ -41,3 +41,41 @@
     font-family: inherit;
 
 }
+
+.weather-time {
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.weather-card-box {
+    border-radius: 20px;
+    background-color: rgb(29 114 118 / 24%);
+    font-family: sans-serif;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.weather-forecast {
+    font-size: 20px;
+    color: #e4e4e4;
+}
+
+.forecat-card {}
+
+.material-icons-cloud {
+    font-size: 35px !important;
+}
+
+.material-icons-arrow {
+    font-size: 14px !important;
+    transform: rotate(-33deg);
+}
+
+.weather-speed {
+    font-size: 14px;
+}
+
+.weather-forecast-description-box {
+    text-align: initial;
+}
