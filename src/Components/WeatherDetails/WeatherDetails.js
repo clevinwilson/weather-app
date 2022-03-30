@@ -11,7 +11,7 @@ function WeatherDetails() {
 
         <div className='row'>
           <div className='mt-4 col-3 '>
-            <i className="material-icons nav__icon weatherpage-icon">edit</i>
+            <i onClick={() => { navigate('/addplace')}} className="material-icons nav__icon weatherpage-icon">edit</i>
           </div>
           <div className='mt-4 col-6 weatherdetails-header'>
             <p style={{ fontSize: "20px" }} >Kannur</p>
