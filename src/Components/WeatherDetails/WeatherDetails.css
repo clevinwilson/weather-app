@@ -79,3 +79,11 @@
 .weather-forecast-description-box {
     text-align: initial;
 }
+
+.forecast-text {
+    font-size: 17px;
+}
+
+.left-margin-subtext{
+    margin-left: 50px;
+}

@@ -41,7 +41,7 @@ function WeatherDetails() {
               <h1 className='weather-forecast'>Forecast</h1>
               <div className='row forecast-description mt-5'>
                 <div className='col-4'>
-                  <img style={{borderRadius:'11px'}} className="mt-4" src='https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png'></img>
+                  <img style={{ borderRadius: '11px' }} className="mt-4" src='https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png'></img>
                 </div>
                 <div className='forecat-card col-8 p-3'>
                   <div className=''>
@@ -52,6 +52,36 @@ function WeatherDetails() {
                       <i className="ml-5 material-icons material-icons-arrow  nav__icon">east</i><span className='weather-speed'>6 km/h</span>
                       <span className='ml-5 material-icons-arrow weather-speed'>68° </span>
                       <span className='ml-5 material-icons-arrow weather-speed'>ENE </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className='row mt-4 p-3'>
+            <div className=' weather-card-box'>
+              <h1 className='weather-forecast'>Forecast</h1>
+              <div className='row forecast-description mt-5'>
+                <div className='forecat-card col-12 p-3'>
+                  <div className=''>
+                    
+                    <div className='ml-5 weather-forecast-description-box '>
+                     <div >
+                        <span className=' forecast-text weather-speed'>Humidity: 68° </span>
+                        <span  className='left-margin-subtext forecast-text weather-speed'>Ecloudcover:18 </span>
+                     </div>
+                      <div >
+                        <span className=' forecast-text weather-speed'>Cloudcover: 68° </span>
+                        <span className='ml-5 forecast-text weather-speed'>Feelslike:18 </span>
+                      </div>
+                      <div >
+                        <span className=' forecast-text weather-speed'>Uv_index: 68° </span>
+                        <span className='left-margin-subtext forecast-text weather-speed'>Visibility:18 </span>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>

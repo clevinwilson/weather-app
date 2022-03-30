@@ -11,6 +11,7 @@ body {
     background-color: #ffffff;
     display: flex;
     overflow-x: auto;
+    z-index: 999;
 }
 
 .nav__link {
@@ -174,7 +175,7 @@ a {
 /* top bar for sm device */
 .topnav {
     overflow: hidden;
-    background-color:rgb();
+    background-color: rgb();
 }
 
 .topnav a {
@@ -357,6 +358,7 @@ sidenav {
 .sidenav-open {
     width: 250px;
 }
-.sidenav-close{
+
+.sidenav-close {
     width: 0px;
 }
