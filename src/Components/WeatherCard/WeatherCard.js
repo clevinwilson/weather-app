@@ -21,9 +21,9 @@ function Card() {
                 )
 
             })
-            // axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=${location[0].city}`).then((response) => {
-            //     setWeather(response.data)
-            // })
+            axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=${location[0].city}`).then((response) => {
+                setWeather(response.data)
+            })
         })
     }, [])
     return (
@@ -32,7 +32,7 @@ function Card() {
             <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-12" >
                 <div className="card-body ">
                     {weather.location ? <div className='row'>
-                        <div className='col-6 mt-3'>
+                        <div className='col-6 mt-4'>
                             <h5 className=" card-title">{weather.location ? weather.location.name : null}</h5>
                             {/* <h6 className="card-subtitle mb-2 sub-title">{weather.location ? weather.location.region + " ," + weather.location.country : null}</h6> */}
                             <p className="card-text mt-3">{weather.location ? weather.current.weather_descriptions[0] : null}</p>
