@@ -86,3 +86,11 @@
 .left-margin-subtext{
     margin-left: 35px;
 }
+
+.loading{
+        display: flex;
+    justify-content: center;
+    height: 710px;
+    align-items: center;
+    margin: auto;
+}

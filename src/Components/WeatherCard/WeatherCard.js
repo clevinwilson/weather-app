@@ -23,9 +23,9 @@ function Card() {
                 )
 
             })
-            axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=${location[0].city}`).then((response) => {
-                setWeather(response.data)
-            })
+            // axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=${location[0].city}`).then((response) => {
+            //     setWeather(response.data)
+            // })
         })
     }, [])
     return (
