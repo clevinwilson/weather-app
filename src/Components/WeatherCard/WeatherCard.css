@@ -67,3 +67,8 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
+.card-body-loading{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
