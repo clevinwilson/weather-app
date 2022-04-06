@@ -24,10 +24,10 @@ function WeatherDetails() {
         )
 
       })
-      // axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=${location[0].city}`).then((response) => {
-      //   console.log(response.data);
-      //     setWeather(response.data)
-      // })
+      //  axios.get(`http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=${location[0].city}`).then((response) => {
+      //    console.log(response.data);
+      //      setWeather(response.data)
+      //  })
     })
   }, [])
 

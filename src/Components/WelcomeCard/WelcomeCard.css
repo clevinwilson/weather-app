@@ -35,3 +35,9 @@
 .welcome-container {
     margin-top: 63px;
 }
+
+@media screen and (min-width: 627px) {
+    .welcome-container {
+        margin-top: 160px;
+    }
+}
