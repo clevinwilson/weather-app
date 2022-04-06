@@ -1,0 +1,8 @@
+.movie-card {
+    background: red;
+    height: 159px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
