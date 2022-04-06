@@ -10,7 +10,9 @@ function WeatherCardPage() {
     <div style={{ backgroundImage: `url(${screen ? 'https://img.freepik.com/free-vector/people-walk-run-ride-bike-city-park-active-lifestyle-urban-environments-outdoor-leisure-vector-illustration-cartoon-style_165429-692.jpg?w=1060' : 'https://img.freepik.com/free-vector/people-walk-run-ride-bike-city-park-active-lifestyle-urban-environments-outdoor-leisure-vector-illustration-cartoon-style_165429-692.jpg'})`, backgroundSize: "cover" } }>
       <Navbar/>
       <WelcomCard/>
-      <Weather/>
+      <div className='cards weatherbox-container'>
+        <Weather />
+      </div>
     </div>
   )
 }

@@ -64,11 +64,13 @@
 
 .weatherbox-container {
     background-color: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.card-body-loading{
-        display: flex;
+
+.card-body-loading {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+

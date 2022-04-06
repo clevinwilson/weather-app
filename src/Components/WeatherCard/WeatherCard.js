@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { WEATHER_API_KEY } from '../constants/constants'
 import { FirebaseContext } from '../../store/Context';
 import BeatLoader from "react-spinners/BeatLoader";
+import MovieCard from '../MovieCard/MovieCard';
+
 function Card() {
 
     const [weather, setWeather] = useState({ loading: true });
@@ -29,9 +31,9 @@ function Card() {
         })
     }, [])
     return (
-        <div className='box-padding weatherbox-container'>
+        <div className='box-padding p-0   ml-3 mr-3 row'>
             {/* <h2 className='section-title'>Weather</h2> */}
-            <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-4" >
+            <div onClick={() => { navigate('/weatherdetails') }} className="mt-4 mb-4 card col-md-4" >
                 <div className={weather.loading ?"card-body-loading card-body ":"card-body "}>
                     {weather.location ?
 
@@ -64,6 +66,8 @@ function Card() {
                     }
                 </div>
             </div>
+
+            <MovieCard />
 
 
         </div>
