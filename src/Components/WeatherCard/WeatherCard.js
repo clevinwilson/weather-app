@@ -31,9 +31,9 @@ function Card() {
         })
     }, [])
     return (
-        <div className='box-padding p-3   ml-3 mr-3 row'>
+        <div className='box-padding p-3 pt-4   ml-2 mr-2 row'>
             {/* <h2 className='section-title'>Weather</h2> */}
-            <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-4 mr-4" >
+            <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-3 mr-4" >
                 <div className={weather.loading ?"card-body-loading card-body ":"card-body "}>
                     {weather.location ?
 
