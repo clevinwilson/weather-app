@@ -27,7 +27,7 @@ function WelcomeCard() {
           <p className='title-message'>Hi, Clevin</p>
           <p className=' title-subtext'>Good morning</p>
         </div>
-        <div onClick={() => { }} className=" location-card  mt-5  col-12" >
+        <div onClick={() => { }} className=" location-card  mt-5  col-12 col-md-4" >
           <div className="card-body ">
             <div className='row'>
               <div  className='col-3 text-center mt-2'>

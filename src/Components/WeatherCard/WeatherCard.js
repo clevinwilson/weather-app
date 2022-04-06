@@ -31,7 +31,7 @@ function Card() {
     return (
         <div className='box-padding weatherbox-container'>
             {/* <h2 className='section-title'>Weather</h2> */}
-            <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-12" >
+            <div onClick={() => { navigate('/weatherdetails') }} className=" mb-4 card col-md-4" >
                 <div className={weather.loading ?"card-body-loading card-body ":"card-body "}>
                     {weather.location ?
 
