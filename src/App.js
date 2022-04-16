@@ -8,6 +8,7 @@ import WeatherCard from './Pages/WeatherCard';
 import { FirebaseContext } from './store/Context';
 import { useContext } from 'react';
 import WeatherDetails from './Pages/WeatherDetails';
+import MovieListPage from './Pages/MovieList';
 function App() {
   const { firebase } = useContext(FirebaseContext)
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/'  element={<WeatherCard/>} />
           <Route path='/weatherdetails' element={<WeatherDetails/>} />
           <Route path='/addplace' element={<AddPlace></AddPlace>} />
+          <Route path='/MovieListPage' element={<MovieListPage></MovieListPage>} />
         </Routes>
       </BrowserRouter>
     </div>
