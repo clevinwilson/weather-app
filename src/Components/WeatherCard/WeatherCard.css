@@ -8,6 +8,9 @@
     position: inherit !important;
 }
 
+.box-padding{
+    margin-bottom: 60px;
+}
 
 .card-title {
 

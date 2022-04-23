@@ -63,7 +63,7 @@ function Navbar() {
             </nav>
             {/* <!-- top var for sm device --> */}
 
-            <div className=" p-2 topnav">
+            <div style={{position:"fixed",overflow:"hidden",width:'100%',top:'0'}} className=" p-2 topnav">
                 <a onClick={() => { navigate('/') }} className="active" >CoWin</a>
                 {/* <!-- <a href="#news">News</a>
                   <a href="#contact">Contact</a>
